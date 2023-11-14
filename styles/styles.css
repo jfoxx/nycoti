@@ -11,9 +11,11 @@
  */
 
  :root {
+  --orange: #f7941d;
+
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: #e00087;
+  --link-hover-color: #ffe1f7;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
@@ -145,7 +147,6 @@ a.button:any-link, button {
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  border: 2px solid transparent;
   padding: 5px 30px;
   text-align: center;
   font-style: normal;
@@ -157,12 +158,17 @@ a.button:any-link, button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #fff;
+	border-image: linear-gradient(113.45deg, #e00087 5.31%, #f7941d 98.73%) 1;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  background-color: #ba0070;
+  border-color: #ad0068;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 button:disabled, button:disabled:hover {
@@ -246,6 +252,42 @@ main .section {
 }
 
 /* section metadata */
+
+main .section:first-of-type{
+  background: linear-gradient(113.45deg, #e00087 10%, #f7941d 86%, #fc0 99%);
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+main .section:first-of-type::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../icons/circuit.svg");
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.07;
+}
+
+main .section:first-of-type a.button {
+  background-color: #f7941d;
+  border-style: solid;
+  border-color: rgb(255 255 255 / 40%);
+  color: black;
+}
+
+.default-content-wrapper {
+  z-index: 2;
+  position: relative;
+}
+
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .section.dark {
+  background-color: black;
 }
