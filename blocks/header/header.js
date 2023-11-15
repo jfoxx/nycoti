@@ -96,6 +96,29 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
+  // preheader bar
+  const preheader = document.createElement('div');
+  preheader.className = 'preheader';
+  const phBrand = document.createElement('div');
+  phBrand.className = 'phbrand';
+  const icon = document.createElement('a');
+  icon.href = 'https://www1.nyc.gov/';
+  icon.className = 'brand-icon';
+  const title = document.createElement('span');
+  title.className = 'site-title';
+  title.innerText = 'Office of Technology & Innovation';
+  phBrand.append(icon, title);
+  const links = document.createElement('div');
+  links.className = 'phlinks';
+  const linkList = document.createElement('ul');
+  const link1 = document.createElement('li');
+  const link2 = document.createElement('li');
+  link1.innerText = 'NYC 311';
+  link2.innerText = 'Search all NYC.gov';
+  linkList.append(link1, link2);
+  links.append(linkList);
+  preheader.append(phBrand, links);
+
   // decorate nav DOM
   const nav = document.createElement('nav');
   nav.id = 'nav';
@@ -145,4 +168,5 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+  block.prepend(preheader);
 }

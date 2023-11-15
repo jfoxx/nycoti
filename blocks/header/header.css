@@ -3,7 +3,50 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 5;
-  position: fixed;
+  position: relative;
+}
+
+.preheader {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 14rem;
+}
+
+.phbrand {
+  font-size: 16px;
+  display: flex;
+}
+
+.phbrand a.brand-icon {
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-image: url('../../icons/nyc.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.phbrand .site-title {
+  display: inline-block;
+  border-left: 1px solid white;
+  padding-left: 20px;
+}
+
+.phlinks ul {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  margin: 0;
+
+}
+
+.phlinks ul li {
+  font-size: 1.1rem;
+  margin-left: 20px;
 }
 
 header nav {
