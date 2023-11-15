@@ -1,7 +1,8 @@
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
+  background-color: black;
   font-size: var(--body-font-size-s);
+  color: white;
 }
 
 footer .footer {
@@ -11,4 +12,22 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+}
+
+footer .default-content-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer .columns-wrapper {
+  margin: 50px auto;
+}
+
+footer .columns > div > div {
+  display: block;
+}
+
+footer .columns img {
+  width: 100px;
+  height: auto;
 }

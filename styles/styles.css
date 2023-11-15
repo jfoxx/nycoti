@@ -296,4 +296,34 @@ main .section.dark {
 
 main .section.light {
   background-color: #efefef;
+  position: relative;
+}
+
+main .section.light .button {
+  background-color: var(--orange);
+  border-color: rgba(255, 255, 255, 40%);
+  border-image: none;
+  font-size: 1.2rem;
+  color: black;
+
+}
+
+main .section.light.circuit {
+  background-color: white;
+}
+
+main .section.circuit::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../icons/circuit.svg");
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.03;
+}
+
+div[data-align="center"] {
+  text-align: center;
 }
