@@ -6,6 +6,10 @@ header .nav-wrapper {
   position: relative;
 }
 
+header a:hover {
+  background-color: none;
+}
+
 .preheader {
   background-color: black;
   color: white;
