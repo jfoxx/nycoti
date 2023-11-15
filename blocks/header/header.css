@@ -6,6 +6,48 @@ header .nav-wrapper {
   position: fixed;
 }
 
+.preheader {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 14rem;
+}
+
+.phBrand {
+  font-size: 16px;
+  display: flex;
+}
+
+.phBrand a.brandIcon {
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-image: url('../../icons/nyc.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.phBrand .siteTitle {
+  display: inline-block;
+  border-left: 1px solid white;
+  padding-left: 20px;
+}
+
+.phLinks ul {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  margin: 0;
+
+}
+
+.phLinks ul li {
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+
 header nav {
   box-sizing: border-box;
   display: grid;
