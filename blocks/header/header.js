@@ -104,6 +104,7 @@ export default async function decorate(block) {
   const icon = document.createElement('a');
   icon.href = 'https://www1.nyc.gov/';
   icon.className = 'brand-icon';
+  icon.setAttribute('title', 'Go to nyc.gov');
   const title = document.createElement('span');
   title.className = 'site-title';
   title.innerText = 'Office of Technology & Innovation';
