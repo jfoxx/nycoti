@@ -293,3 +293,7 @@ main .section.dark {
   background-color: black;
   color: white;
 }
+
+main .section.light {
+  background-color: #efefef;
+}
