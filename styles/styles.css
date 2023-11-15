@@ -301,7 +301,7 @@ main .section.light {
 
 main .section.light .button {
   background-color: var(--orange);
-  border-color: rgba(255, 255, 255, 40%);
+  border-color: rgba(255 255 255 / 40%);
   border-image: none;
   font-size: 1.2rem;
   color: black;
