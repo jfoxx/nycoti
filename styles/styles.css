@@ -261,6 +261,10 @@ main .section:first-of-type{
   position: relative;
 }
 
+body.interior main .section:first-of-type {
+  text-align: left;
+}
+
 main .section:first-of-type::before {
   content: "";
   width: 100%;
@@ -331,4 +335,20 @@ main .section.light.circuit > div {
 
 div[data-align="center"] {
   text-align: center;
+}
+
+body.interior .sidenav-container {
+  display: flex;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+body.interior .sidenav-container .sidenav-wrapper {
+  width: 30%;
+  margin: 0;
+}
+
+body.interior .sidenav-container .default-content-wrapper {
+  width: calc( 70% - 60px );
+  margin-left: 60px;
 }
