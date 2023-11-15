@@ -324,6 +324,11 @@ main .section.circuit::before {
   opacity: 0.03;
 }
 
+main .section.light.circuit > div {
+  z-index: 2;
+  position: relative;
+}
+
 div[data-align="center"] {
   text-align: center;
 }
