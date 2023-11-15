@@ -60,3 +60,9 @@
 .cards.horizontal > ul > li > .cards-card-image  img {
   aspect-ratio: 1/1;
 }
+
+.cards.dark >ul >li {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
