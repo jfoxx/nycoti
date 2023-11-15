@@ -7,7 +7,7 @@ header .nav-wrapper {
 }
 
 header a:hover {
-  background-color: none;
+  background: none;
 }
 
 .preheader {
