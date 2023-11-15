@@ -1,0 +1,17 @@
+.social > div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+}
+
+.social > div > div {
+  width: 20%;
+  padding: 20px;
+}
+
+.social img {
+  max-width: 100%;
+  height: auto;
+}
