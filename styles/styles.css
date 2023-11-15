@@ -291,4 +291,5 @@ main .section.highlight {
 
 main .section.dark {
   background-color: black;
+  color: white;
 }
