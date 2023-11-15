@@ -286,7 +286,7 @@ main .section:first-of-type a.button {
 }
 
 main .section.highlight {
-  background-color: var(--highlight-background-color);
+  background: linear-gradient(113.45deg, #fc0 5.31%, #f7941d 15.31%, #e00087 98.73%);
 }
 
 main .section.dark {
