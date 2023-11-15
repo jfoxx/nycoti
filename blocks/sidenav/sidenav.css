@@ -1,0 +1,26 @@
+.sidenav ul {
+    border: 1px solid #cecece;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-right: 50px;
+    width: auto;
+
+}
+
+.sidenav ul li a {
+  display: block;
+  padding: 15px;
+  color: #495057;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #cecece;
+}
+
+.sidenav ul li:last-child a {
+  border: none;
+}
+
+.sidenav ul li a:hover {
+  background-color: var(--link-color);
+  color: white;
+  text-decoration: none;
+}
