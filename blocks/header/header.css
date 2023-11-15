@@ -14,12 +14,12 @@ header .nav-wrapper {
   padding: 8px 14rem;
 }
 
-.phBrand {
+.phbrand {
   font-size: 16px;
   display: flex;
 }
 
-.phBrand a.brandIcon {
+.phbrand a.brand-icon {
   display: block;
   width: 45px;
   height: 15px;
@@ -29,13 +29,14 @@ header .nav-wrapper {
   margin-right: 20px;
   margin-top: 5px;
 }
-.phBrand .siteTitle {
+
+.phbrand .site-title {
   display: inline-block;
   border-left: 1px solid white;
   padding-left: 20px;
 }
 
-.phLinks ul {
+.phlinks ul {
   list-style: none;
   padding-inline-start: 0;
   display: flex;
@@ -43,7 +44,7 @@ header .nav-wrapper {
 
 }
 
-.phLinks ul li {
+.phlinks ul li {
   font-size: 1.1rem;
   margin-left: 20px;
 }

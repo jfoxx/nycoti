@@ -96,25 +96,25 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
-  //preheader bar
+  // preheader bar
   const preheader = document.createElement('div');
-  preheader.className = "preheader";
-  var phBrand = document.createElement('div');
-  phBrand.className = "phBrand";
-  var icon = document.createElement('a');
-  icon.href = "https://www1.nyc.gov/";
-  icon.className = "brandIcon";
-  var title = document.createElement('span');
-  title.className = "siteTitle";
-  title.innerText = "Office of Technology & Innovation";
+  preheader.className = 'preheader';
+  const phBrand = document.createElement('div');
+  phBrand.className = 'phbrand';
+  const icon = document.createElement('a');
+  icon.href = 'https://www1.nyc.gov/';
+  icon.className = 'brand-icon';
+  const title = document.createElement('span');
+  title.className = 'site-title';
+  title.innerText = 'Office of Technology & Innovation';
   phBrand.append(icon, title);
-  var links = document.createElement('div');
-  links.className = "phLinks";
-  var linkList = document.createElement('ul');
-  var link1 = document.createElement('li');
-  var link2 = document.createElement('li');
-  link1.innerText = "NYC 311";
-  link2.innerText = "Search all NYC.gov";
+  const links = document.createElement('div');
+  links.className = 'phlinks';
+  const linkList = document.createElement('ul');
+  const link1 = document.createElement('li');
+  const link2 = document.createElement('li');
+  link1.innerText = 'NYC 311';
+  link2.innerText = 'Search all NYC.gov';
   linkList.append(link1, link2);
   links.append(linkList);
   preheader.append(phBrand, links);
