@@ -48,11 +48,10 @@
 
 .cards.horizontal > ul > li > .cards-card-image {
   width: 40%;
+  background-color: black;
 }
-
-.cards.horizontal > ul > li > .cards-card-image { background-color: black;}
 .cards.horizontal > ul > li:nth-child(4) > .cards-card-image { background-color: #f7941d;}
-.cards.horizontal > ul > li:nth-child(6) > .cards-card-image { background-color: #ffcc00;}
+.cards.horizontal > ul > li:nth-child(6) > .cards-card-image { background-color: #fc0;}
 
 .cards.horizontal > ul > li > .cards-card-body {
   width: 60%;
