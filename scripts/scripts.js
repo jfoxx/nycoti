@@ -4,7 +4,6 @@ import {
   loadHeader,
   loadFooter,
   decorateButtons,
-  decorateIcons,
   decorateSections,
   decorateBlocks,
   decorateTemplateAndTheme,
@@ -14,6 +13,35 @@ import {
 } from './aem.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
+
+/**
+ * Add <img> for icon, prefixed with codeBasePath and optional prefix.
+ * @param {span} [element] span element with icon classes
+ * @param {string} [prefix] prefix to be added to icon the src
+ */
+function decorateIcon(span, prefix = '') {
+  const iconName = Array.from(span.classList)
+    .find((c) => c.startsWith('icon-'))
+    .substring(5);
+  const img = document.createElement('img');
+  img.dataset.iconName = iconName;
+  img.src = `${window.hlx.codeBasePath}${prefix}/icons/${iconName}.svg`;
+  img.setAttribute('alt', '');
+  img.loading = 'lazy';
+  span.append(img);
+}
+
+/**
+ * Add <img> for icons, prefixed with codeBasePath and optional prefix.
+ * @param {Element} [element] Element containing icons
+ * @param {string} [prefix] prefix to be added to icon the src
+ */
+function decorateIcons(element, prefix = '') {
+  const icons = [...element.querySelectorAll('span.icon')];
+  icons.forEach((span) => {
+    decorateIcon(span, prefix);
+  });
+}
 
 /**
  * Builds hero block and prepends to main in a new section.
